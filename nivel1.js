@@ -49,7 +49,7 @@ console.log('Tem vida suficiente?', vidaSuficiente);
 console.log('Seu ataque é forte o suficiente?', ataqueForte);
 console.log('Tem nivel avancado?', nivelAvancado);
 console.log('Pode enfrentar o terrível Big Vírus para salvar Algorithmia para sempre?', podeEnfrentarVirus);
-
+console.log('')
 
 //Nivel 2
 
@@ -69,7 +69,7 @@ let ouroAtual = 100;
 let forca = 70;
 let defesa = 50;
 let agilidade = 100;
-let combatesVencidos = 0;
+let combatesVencidos = 25;
 
 //Info. da historia (Nivel 1)
 let localAtual = 'Algorithmia';
@@ -77,8 +77,27 @@ let missaoAtual = 'Protejer Algorithmia do Big Vírus e seus capangas'
 
 //Recaptulacao da historia Nivel 1 - Prologo 
 console.log('Prólogo');
-console.log('---------')
+console.log('---------');
 console.log(nomePersonagem, 'uma destemida', classePersonagem, 'precisa enfrentar o pior vilão já ouvido falar: Big Vírus.');
 console.log('Contando apenas com sua agilidade de ', agilidade, 'pontos, seu ouro acumulado de ', ouroAtual, 'moedas e seu', NOMEARMA, 'está se preparando para fazer com que Algorithmia fique salva para sempre.');
+console.log('')
 
+//Capitulo 1 - Condicionais Simples
+console.log('Capítulo 1: O Alerta dos Ancestrais');
+console.log('-------------------------------------')
 
+//Verificação baseada nos combates vencidos
+if (combatesVencidos >= 20) {
+    console.log('⭐ Os ancestrais liberam a entrada de', nomePersonagem, 'para esta missão!');
+}
+
+//Verificação baseada na Mana Maxima e no Nivel do personagem
+if (manaMaxima <= 100 ) {
+    console.log('⚠️ A', classePersonagem, 'precisa reunir mais mana para enfrentar os inimigos deste nível, treine mais com seu', NOMEARMA, 'para se garantir nas próximas disputas.');
+    console.log('No entanto, se estiver disposta e arriscar, prossiga!');
+}
+
+//Verificação baseada na classe do personagem
+if (classePersonagem === 'Arqueira') {
+    console.log('🏹 Suas flechas são leves mas carregam toda sua força...')
+}
