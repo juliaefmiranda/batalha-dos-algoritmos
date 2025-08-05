@@ -12,7 +12,7 @@ let danoBase = 60;
 //Definicao de constantes
 const NOMEARMA = 'Arco de Dados';
 const NOMEARMADURA = 'Armadura Java';
-const DEFESABASE = 30;
+const DEFESABASE = 43;
 
 //Operadores de atribuicao, treinou e ganhou pontos de experiencia
 xp += 150;
@@ -62,8 +62,8 @@ let vidaAtual = 120;
 let manaAtual = 65;
 let manaMaxima = 80;
 let nivelPersonagem = 14;
-let experiencia = 8;
-let ouroAtual = 100;
+let experiencia = 158;
+let ouroAtual = 70;
 
 //Novos atributos para a batalha
 let forca = 70;
@@ -94,10 +94,35 @@ if (combatesVencidos >= 20) {
 //Verificação baseada na Mana Maxima e no Nivel do personagem
 if (manaMaxima <= 100 ) {
     console.log('⚠️ A', classePersonagem, 'precisa reunir mais mana para enfrentar os inimigos deste nível, treine mais com seu', NOMEARMA, 'para se garantir nas próximas disputas.');
-    console.log('No entanto, se estiver disposta e arriscar, prossiga!');
+    console.log('Somente se estiver disposta e arriscar, prossiga!');
 }
 
 //Verificação baseada na classe do personagem
 if (classePersonagem === 'Arqueira') {
-    console.log('🏹 Suas flechas são leves mas carregam toda sua força...')
+    console.log('🏹 Suas flechas são leves mas carregam toda sua força...');
+} 
+console.log('')
+
+//Capítulo 2 - Condicionais Compostos
+console.log('Capítulo 2: Escolhas que moldarão o Futuro');
+console.log('---------------------------------------------');
+
+//Escolha baseada na agilidade
+if (agilidade >= 50) {
+    console.log('🎉 Graças a sua grande agilidade,', nomePersonagem, 'combate os bugs, avança um nível e ganha mais 20 pontos de experiência!');
+    nivelPersonagem++;
+    experiencia += 20;
+    console.log('Nível atual:', nivelPersonagem, '| Experiência atual:', experiencia);
+} else {
+    console.log('👊 Infelizmente sua agilidade não está alta o suficiente para passar de fase, pratique mais suas habilidades e depois tente novamente.');
+}
+
+//Escolha baseada no ouro
+if (ouro >= 45){
+    console.log('💰Adquiriu ouro o suficiente e aprimorou seu', NOMEARMA, 'para conseguir enfrentar os próximos bugs!');
+    ouro -= 15;
+    console.log('Ouro restante:', ouro);
+    
+} else {
+    console.log(nomePersonagem, 'não conseguiu atingir o número necessário de moedas para conseguir aprimorar seu', NOMEARMA,  'acumule mais ouro para prosseguir.');
 }
