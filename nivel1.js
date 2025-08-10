@@ -153,6 +153,7 @@ if (defesa > ataqueVirus ) {
     console.log('A guerra começou e', nomePersonagem, 'foi atacada por um exército de scripts corrompidos e sua defesa caiu', defesa - ataqueVirus, 'pontos! Eles sabiam que ela estava a caminho e fizeram uma armadilha!');
     console.log('Defesa atual:', defesa);
     console.log('⚔️ Mesmo tendo perdido alguns pontos de defesa, ela não vai desistir! A', classePersonagem, 'fez o ataque mais forte que conseguia unindo sua força e mana máxima, dando um dano de', ataqueBatlha, 'no exército, que agora se tranformara no temido Big Vírus!!');
+    ataqueVirus -= ataqueBatlha;
 } else if (ouroAtual > 150){
     console.log(' A', classePersonagem, 'utilizou suas', ouroAtual, 'moedas e comprou uma poção para turbinar seu', NOMEARMA);
 } else if (vidaAtual <= 20) {
@@ -163,3 +164,20 @@ if (defesa > ataqueVirus ) {
     vidaAtual += 15;
 }
     
+console.log('');
+
+//Final da história
+console.log('Epílogo: Desfecho ');
+console.log('-------------------');
+
+//Vendo quem venceu a batalha, Ártemis ou Big Vírus
+if (ataqueVirus <= 5) {
+    console.log('🏆Sucesso!', nomePersonagem, 'derrota o temido Big Vírus e salva Algorithmia da ameaça de softwares maliciosos, garantindo a segurança do mundo digital!');
+    experiencia += 200;
+    combatesVencidos++;
+ } else {
+    console.log('🗡️ Foi uma batalha desafiadora que fez', nomePersonagem, ' recuar para recuperar sua vida e, para que da próxima vez consiga combater o Big Vírus.');
+ }
+console.log('');
+
+console.log('Fim do capítulo: Continue firme - a próxima missão está por vir!');
