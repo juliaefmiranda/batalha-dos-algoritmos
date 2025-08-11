@@ -141,7 +141,7 @@ console.log('Mana disponível:', manaAtual + 30 );
 
 console.log('');
 
-//Condicionais Encadeadas
+//Condicionais Encadeadas 
 console.log('Capítulo 3:', nomePersonagem, 'vs Big Vírus')
 console.log('----------------------------------');
 
@@ -172,7 +172,7 @@ console.log('-------------------');
 
 //Vendo quem venceu a batalha, Ártemis ou Big Vírus
 if (ataqueVirus <= 5) {
-    console.log('🏆Sucesso!', nomePersonagem, 'derrota o temido Big Vírus e salva Algorithmia da ameaça de softwares maliciosos, garantindo a segurança do mundo digital!');
+    console.log('🏆Sucesso!', nomePersonagem, 'derrota o temido Big Vírus e salva Algorithmia da ameaça de softwares maliciosos, garantindo a segurança do mundo digital! Pelo menos por enquanto...');
     experiencia += 200;
     combatesVencidos++;
  } else {
@@ -181,3 +181,29 @@ if (ataqueVirus <= 5) {
 console.log('');
 
 console.log('Fim do capítulo: Continue firme - a próxima missão está por vir!');
+console.log('---------------------------------------------------------------------');
+console.log('');
+
+
+//Nível 3 - Continuação da História
+
+/*let nomePersonagem = 'Ártemis';
+let classePersonagem = 'Arqueira';
+let vidaMaxima = 150;
+let vidaAtual = 120;
+let manaAtual = 65;
+let manaMaxima = 80;
+let nivelPersonagem = 15;
+let experiencia = 158;
+let ouroAtual = 70 */
+
+//Inventário de Ártemis
+let inventário = ['Armadura Java', 'Arco de dados', 'Poção da Invisibilidade'];
+let aliados = ['Bruxa Blair', 'Mago Henry', 'Guerreira Nimia', 'Vampiro Dyos'];
+let novosInimigos = ['Guerreiro Hades', 'Bruxa Morgana', 'Arqueira Freya'];
+let salasCastelo = ['Biblioteca Misteriosa', 'Salão Divino', 'Masmorra das Trevas'];
+let tesouroColetado = [];
+
+console.log('📣 Agora chegou o momento o qual', nomePersonagem, 'deixará Algorithmia para enfrentar os desafios do Castelo de Arrays...');
+console.log('Com o triunfo dos últimos níveis, a', classePersonagem, 'seguirá para o misterioso castelo...');
+console.log('Inventário inicial:', inventário.length, 'itens especiais');
